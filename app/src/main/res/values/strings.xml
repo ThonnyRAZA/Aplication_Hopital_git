@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Aplication_Hopital</string>
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="Intensite_Migraine">
+        <item>Choississez votre niveau de migraine</item>
+        <item>Modérée</item>
+        <item>Intense</item>
+        <item>Trés intense</item>
+        <item>Insupportable</item>
+    </string-array>
+
+    <string-array name="AINS">
+        <item>Type de médicament (AINS)</item>
+    </string-array>
+
+    <string-array name="Tripan">
+        <item>Type de médicament (Tripan)</item>
+    </string-array>
+
+    <string-array name="Traitement_de_fond">
+        <item>Type de médicament (Traitement de fond)</item>
+    </string-array>
 </resources>
