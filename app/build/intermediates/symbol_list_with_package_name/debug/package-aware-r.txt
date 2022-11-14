@@ -2521,7 +2521,9 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Date
 id FUNCTION
+id Intensite
 id META
 id NO_DEBUG
 id SHIFT
@@ -2605,6 +2607,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
+id barrier2
 id baseline
 id beginOnFirstDraw
 id beginning
@@ -2957,7 +2960,9 @@ id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
 id text2
+id textDate
 id textEnd
+id textIntensite
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -3106,6 +3111,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_display_message
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3197,8 +3203,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-mipmap ic_launcher
-mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -3323,6 +3327,10 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string selected_item
+string selected_item1
+string selected_item2
+string selected_item3
+string selected_item4
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

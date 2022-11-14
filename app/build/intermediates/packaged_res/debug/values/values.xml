@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <string-array name="AINS">
-        <item>Type de médicament (AINS)</item>
+        <item>Aucun AINS</item>
+        <item>FLURBIPROFÈNE</item>
+        <item>KETOPROFENE</item>
+        <item>IBUPROFÈNE</item>
+        <item>NAPROXÈNE</item>
     </string-array>
     <string-array name="Intensite_Migraine">
         <item>Choississez votre niveau de migraine</item>
@@ -11,10 +15,21 @@
         <item>Insupportable</item>
     </string-array>
     <string-array name="Traitement_de_fond">
-        <item>Type de médicament (Traitement de fond)</item>
+        <item>Aucun Traitement de fond</item>
+        <item>OXÉTORONE</item>
+        <item>INDORAMINE</item>
+        <item>FLUNARIZINE</item>
+        <item>AMITRIPTYLINE</item>
     </string-array>
     <string-array name="Tripan">
-        <item>Type de médicament (Tripan)</item>
+        <item>Aucun Tripan</item>
+        <item>SUMATRIPTAN</item>
+        <item>ZOLMITRIPTAN</item>
+        <item>NARATRIPTAN</item>
+        <item>ÉLÉTRIPTAN</item>
+        <item>ALMOTRIPTAN</item>
+        <item>RIZATRIPTAN</item>
+        <item>FROVATRIPTAN</item>
     </string-array>
     <color name="black">#FF000000</color>
     <color name="purple_200">#FFBB86FC</color>
@@ -25,6 +40,10 @@
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Aplication_Hopital</string>
     <string name="selected_item">Selected item:</string>
+    <string name="selected_item1">selected_item:</string>
+    <string name="selected_item2">selected_item:</string>
+    <string name="selected_item3">selected_item:</string>
+    <string name="selected_item4">selected_item:</string>
     <style name="Theme.Aplication_Hopital" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
