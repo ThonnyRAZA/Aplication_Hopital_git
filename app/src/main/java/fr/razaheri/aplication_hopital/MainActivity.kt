@@ -1,17 +1,26 @@
 package fr.razaheri.aplication_hopital
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
-import java.util.*
+import android.annotation.SuppressLint
 import android.app.DatePickerDialog
+import android.content.Context
 import android.content.Intent
-import android.provider.AlarmClock.EXTRA_MESSAGE
+import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+import java.util.*
+
+const val CHOIX_DATE = ""
+const val CHOIX_INTENSITE = ""
+const val CHOIX_AINS = ""
+const val CHOIX_TRIPAN = ""
+const val CHOIX_TDF = ""
+const val CHOIX_OBSERVATION = ""
+const val PREF_NAME = "MIFARINE_PREFS"
+
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -125,22 +134,54 @@ class MainActivity : AppCompatActivity() {
     }
 
     /** Called when the user taps the Send button */
+    @SuppressLint("WrongViewCast")
     private fun sendMessage() {
+
         val Date = findViewById<TextView>(R.id.dateTv)
         val messageDate = Date.text.toString()
 
         val intensite = findViewById<Spinner>(R.id.migraine)
         val messageIntensite = intensite.selectedItem.toString()
 
-        val ains = findViewById<Spinner>(R.id.spnAINS)
-        val messageAins = intensite.selectedItem.toString()
+        val Ains = findViewById<Spinner>(R.id.spnAINS)
+        val messageAins = Ains.selectedItem.toString()
+
+        val tripan = findViewById<Spinner>(R.id.spnTripan)
+        val messageTripan = tripan.selectedItem.toString()
+
+        val tdf = findViewById<Spinner>(R.id.spnTDF)
+        val messageTdf = tdf.selectedItem.toString()
+
+        val obs = findViewById<EditText>(R.id.editTextTextMultiLine)
+        val messageObs = obs.text.toString()
+
+        // dans votre fonction qui vous permet de passer à la vue suivante
+        var sharedpreferences = this?.getPreferences(Context.MODE_PRIVATE) ?: return
+        with (sharedpreferences.edit()) {
+            putString(CHOIX_DATE, messageDate)
+            putString(CHOIX_AINS, messageAins)
+            putString(CHOIX_TRIPAN, messageTripan)
+            putString(CHOIX_TDF, messageTdf)
+            putString(CHOIX_INTENSITE, messageIntensite)
+            putString(CHOIX_OBSERVATION, messageObs)
+            apply()
+        }
+        
+
+
+        //dans votre onCreate par exemple pour récupérer une valeur
+        //val date = sharedpreferences?.getString(CHOIX_DATE, defaultValue)
 
         val intent = Intent(this, DisplayMessageActivity::class.java).also {
             it.putExtra("EXTRA_MESSAGE_DATE", messageDate)
             it.putExtra("EXTRA_MESSAGE_INTENSITE", messageIntensite)
             it.putExtra("EXTRA_MESSAGE_AINS", messageAins)
+            it.putExtra("EXTRA_MESSAGE_TRIPAN", messageTripan)
+            it.putExtra("EXTRA_MESSAGE_TDF", messageTdf)
+            it.putExtra("EXTRA_MESSAGE_OBS", messageObs)
             startActivity(it)
         }
 
     }
+
 }

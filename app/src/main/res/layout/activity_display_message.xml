@@ -51,34 +51,105 @@
         android:id="@+id/Intensite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="172dp"
         android:text="TextView"
         android:textColor="#FF0707"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--<TextView
+    <TextView
         android:id="@+id/textAins"
         android:layout_width="244dp"
         android:layout_height="30dp"
-        android:layout_marginStart="16dp"
         android:text="Le médicament AINS choisie est : "
-        android:textSize="20sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/Ains"
-        app:layout_constraintEnd_toStartOf="@+id/Ains"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/spnAins"
+        app:layout_constraintEnd_toStartOf="@+id/spnAins"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/Ains"
+        android:id="@+id/spnAins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textColor="#FF0707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Intensite" />
+
+    <TextView
+        android:id="@+id/textTripan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Le médicament Tripan choisie est : "
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/spnTripan"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/spnTripan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textColor="#FF0707"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnAins" />
+
+    <TextView
+        android:id="@+id/textTdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Le médicament TDF choisie est : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTripan" />
+
+    <TextView
+        android:id="@+id/textObs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="L'observation dit est : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTdf" />
+
+    <TextView
+        android:id="@+id/spnTDF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textColor="#FF0707"
-        android:textSize="25sp"
-        tools:layout_editor_absoluteX="270dp"
-        tools:layout_editor_absoluteY="146dp" /> -->
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textTdf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Observations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FF0707"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textObs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

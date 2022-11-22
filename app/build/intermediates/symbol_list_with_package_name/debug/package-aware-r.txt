@@ -2526,6 +2526,7 @@ id FUNCTION
 id Intensite
 id META
 id NO_DEBUG
+id Observations
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2792,6 +2793,7 @@ id material_value_index
 id matrix
 id message
 id middle
+id migraine
 id mini
 id month_grid
 id month_navigation_bar
@@ -2915,10 +2917,10 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
-id spinner
 id spline
 id split_action_bar
 id spnAINS
+id spnAins
 id spnTDF
 id spnTripan
 id spread
@@ -2960,13 +2962,17 @@ id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
 id text2
+id textAins
 id textDate
 id textEnd
 id textIntensite
+id textObs
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textTdf
 id textTop
+id textTripan
 id textViewIDM
 id textViewObs
 id textViewSDM
