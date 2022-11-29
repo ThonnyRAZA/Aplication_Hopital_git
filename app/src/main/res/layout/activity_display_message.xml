@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="TextView"
-        android:textColor="#FF0707"
+        android:textColor="#0027FF"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.133"
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="172dp"
         android:text="TextView"
-        android:textColor="#FF0707"
+        android:textColor="#0027FF"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.87"
@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="TextView"
-        android:textColor="#FF0707"
+        android:textColor="#0027FF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.854"
@@ -101,7 +101,7 @@
         android:layout_marginStart="23dp"
         android:layout_marginTop="60dp"
         android:text="TextView"
-        android:textColor="#FF0707"
+        android:textColor="#0027FF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.843"
@@ -133,7 +133,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textColor="#FF0707"
+        android:textColor="#0027FF"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textTdf"
         app:layout_constraintEnd_toEndOf="parent"
@@ -145,11 +145,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textColor="#FF0707"
+        android:textColor="#0027FF"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textObs"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.854"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Modifier"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnValider"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="40dp"
+        android:text="Valider "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Observations" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

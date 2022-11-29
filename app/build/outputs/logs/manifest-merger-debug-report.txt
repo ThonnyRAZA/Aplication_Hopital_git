@@ -4,6 +4,7 @@ ADDED from C:\Users\amber\AndroidStudioProjects\Aplication_Hopital\app\src\main\
 INJECTED from C:\Users\amber\AndroidStudioProjects\Aplication_Hopital\app\src\main\AndroidManifest.xml:2:1-28:12
 INJECTED from C:\Users\amber\AndroidStudioProjects\Aplication_Hopital\app\src\main\AndroidManifest.xml:2:1-28:12
 INJECTED from C:\Users\amber\AndroidStudioProjects\Aplication_Hopital\app\src\main\AndroidManifest.xml:2:1-28:12
+MERGED from [androidx.databinding:viewbinding:7.2.2] C:\Users\amber\.gradle\caches\transforms-3\99356657452459972d5394fc9fd6ead2\transformed\viewbinding-7.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\amber\.gradle\caches\transforms-3\9d6778b007a14e0c6659deb3da7018f2\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\amber\.gradle\caches\transforms-3\0d84a4d4da2abb3fb58227fdd5309bb8\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\amber\.gradle\caches\transforms-3\ad4e16bcc8482e73473c57e8646d79f2\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
@@ -17,7 +18,6 @@ MERGED from [androidx.loader:loader:1.0.0] C:\Users\amber\.gradle\caches\transfo
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\amber\.gradle\caches\transforms-3\6740173314278d5dc47a04980597f4e3\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\amber\.gradle\caches\transforms-3\42f0322a0a41c82835fa1bb5d83460d3\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\amber\.gradle\caches\transforms-3\f48f900f03316f7f3735d59aacb15ff3\transformed\core-ktx-1.8.0\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\af620fabec4e0fed4d0ffd6040cf4262\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\6355f7f15047d6047dff53a3d4986848\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\amber\.gradle\caches\transforms-3\e33a5a07e0e96c48df04ee4e4b5363cc\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
@@ -32,6 +32,7 @@ MERGED from [androidx.core:core:1.8.0] C:\Users\amber\.gradle\caches\transforms-
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\amber\.gradle\caches\transforms-3\944f278a1c6f1b0e45f50820d68c4b1e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amber\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\amber\.gradle\caches\transforms-3\91e8016f0a249a956def1658dacf6ac4\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\af620fabec4e0fed4d0ffd6040cf4262\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\amber\.gradle\caches\transforms-3\b61d68b331896ea26f23fd544338c1eb\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\amber\.gradle\caches\transforms-3\3367f2aef9957f33c0ae437b02a9c6b3\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\amber\.gradle\caches\transforms-3\3145d3d71294ba1b743e8b2199ddf2ae\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
@@ -121,6 +122,8 @@ uses-sdk
 INJECTED from C:\Users\amber\AndroidStudioProjects\Aplication_Hopital\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\amber\AndroidStudioProjects\Aplication_Hopital\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\amber\AndroidStudioProjects\Aplication_Hopital\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.2.2] C:\Users\amber\.gradle\caches\transforms-3\99356657452459972d5394fc9fd6ead2\transformed\viewbinding-7.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.2.2] C:\Users\amber\.gradle\caches\transforms-3\99356657452459972d5394fc9fd6ead2\transformed\viewbinding-7.2.2\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\amber\.gradle\caches\transforms-3\9d6778b007a14e0c6659deb3da7018f2\transformed\material-1.6.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\amber\.gradle\caches\transforms-3\9d6778b007a14e0c6659deb3da7018f2\transformed\material-1.6.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\amber\.gradle\caches\transforms-3\0d84a4d4da2abb3fb58227fdd5309bb8\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
@@ -147,8 +150,6 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\a
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\amber\.gradle\caches\transforms-3\42f0322a0a41c82835fa1bb5d83460d3\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\amber\.gradle\caches\transforms-3\f48f900f03316f7f3735d59aacb15ff3\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\amber\.gradle\caches\transforms-3\f48f900f03316f7f3735d59aacb15ff3\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\af620fabec4e0fed4d0ffd6040cf4262\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\af620fabec4e0fed4d0ffd6040cf4262\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\6355f7f15047d6047dff53a3d4986848\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\6355f7f15047d6047dff53a3d4986848\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
@@ -177,6 +178,8 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amber\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amber\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\amber\.gradle\caches\transforms-3\91e8016f0a249a956def1658dacf6ac4\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\amber\.gradle\caches\transforms-3\91e8016f0a249a956def1658dacf6ac4\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\af620fabec4e0fed4d0ffd6040cf4262\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\amber\.gradle\caches\transforms-3\af620fabec4e0fed4d0ffd6040cf4262\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\amber\.gradle\caches\transforms-3\b61d68b331896ea26f23fd544338c1eb\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\amber\.gradle\caches\transforms-3\b61d68b331896ea26f23fd544338c1eb\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\amber\.gradle\caches\transforms-3\3367f2aef9957f33c0ae437b02a9c6b3\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41

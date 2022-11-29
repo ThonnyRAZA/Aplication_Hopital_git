@@ -2,12 +2,21 @@ package fr.razaheri.aplication_hopital
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Spinner
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 
 class DisplayMessageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_display_message)
+
+        val boutonRetour: Button = findViewById(R.id.btnModifier)
+
+        boutonRetour.setOnClickListener{
+            modifier()
+        }
 
         val messageDate = intent.getStringExtra("EXTRA_MESSAGE_DATE")
         val messageIntensite = intent.getStringExtra("EXTRA_MESSAGE_INTENSITE")
@@ -43,4 +52,11 @@ class DisplayMessageActivity : AppCompatActivity() {
 
 
     }
+
+    private fun modifier(){
+
+        onBackPressed()
+
+    }
+
 }

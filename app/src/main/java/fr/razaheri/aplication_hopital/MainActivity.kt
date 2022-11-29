@@ -4,10 +4,12 @@ import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import fr.razaheri.aplication_hopital.databinding.ActivityMainBinding
 import java.util.*
 
 const val CHOIX_DATE = ""
@@ -16,14 +18,18 @@ const val CHOIX_AINS = ""
 const val CHOIX_TRIPAN = ""
 const val CHOIX_TDF = ""
 const val CHOIX_OBSERVATION = ""
-const val PREF_NAME = "MIFARINE_PREFS"
+const val PREF_NAME = "MIGRAINE_PREFS"
 
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var binding: ActivityMainBinding
+    lateinit var  sharedPreferences : SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val mPickTimeBtn = findViewById<Button>(R.id.pickDateBtn)
         val textView     = findViewById<TextView>(R.id.dateTv)
@@ -131,6 +137,22 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener{
             sendMessage()
         }
+
+        val sharedPreferences = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+        //dans votre onCreate par exemple pour récupérer une valeur
+        val intensitePref = sharedPreferences?.getString(CHOIX_INTENSITE, "Modérée")
+
+        //val adapterTdf = ArrayAdapter(this, android.R.layout.simple_spinner_item, intensitePref)
+
+        // récupération de la valeur sauvegardée
+        val intensite = sharedPreferences?.getString(CHOIX_INTENSITE, "")
+
+        // recherche de sa position dans le spinner
+        //val spinnerPosition: Int = adapter.getPosition(ains)
+
+        // positionnement du spinner à la position souhaitée
+        //spinnerAins.setSelection(spinnerPosition)
+
     }
 
     /** Called when the user taps the Send button */
@@ -156,8 +178,8 @@ class MainActivity : AppCompatActivity() {
         val messageObs = obs.text.toString()
 
         // dans votre fonction qui vous permet de passer à la vue suivante
-        var sharedpreferences = this?.getPreferences(Context.MODE_PRIVATE) ?: return
-        with (sharedpreferences.edit()) {
+        val sharedPreferences = this?.getSharedPreferences("fichier_de_preferences", Context.MODE_PRIVATE) ?: return
+        with (sharedPreferences.edit()) {
             putString(CHOIX_DATE, messageDate)
             putString(CHOIX_AINS, messageAins)
             putString(CHOIX_TRIPAN, messageTripan)
@@ -169,8 +191,7 @@ class MainActivity : AppCompatActivity() {
         
 
 
-        //dans votre onCreate par exemple pour récupérer une valeur
-        //val date = sharedpreferences?.getString(CHOIX_DATE, defaultValue)
+
 
         val intent = Intent(this, DisplayMessageActivity::class.java).also {
             it.putExtra("EXTRA_MESSAGE_DATE", messageDate)

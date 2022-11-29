@@ -17,6 +17,8 @@ id Date
 id Intensite
 id Observations
 id barrier2
+id btnModifier
+id btnValider
 id bttnEnvoyer
 id dateTv
 id editTextTextMultiLine
